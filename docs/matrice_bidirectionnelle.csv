@@ -1,0 +1,25 @@
+Exigence_ID,Exigence_Description,Priorité,Cas_de_Test_ID,Cas_de_Test_Description,Statut
+EXG-01,Inscription utilisateur,Haute,TC-001,POST /api/register avec données valides,Planifié
+EXG-01,Inscription utilisateur,Haute,TC-002,POST /api/register avec email déjà utilisé,Planifié
+EXG-01,Inscription utilisateur,Haute,TC-003,POST /api/register avec champs manquants,Planifié
+EXG-02,Connexion utilisateur,Haute,TC-004,POST /api/login avec credentials valides,Planifié
+EXG-02,Connexion utilisateur,Haute,TC-005,POST /api/login avec email invalide,Planifié
+EXG-02,Connexion utilisateur,Haute,TC-006,POST /api/login avec mot de passe incorrect,Planifié
+EXG-03,Déconnexion,Moyenne,TC-007,POST /api/logout (mock),Planifié
+EXG-04,Réinitialisation mot de passe,Basse,TC-008,POST /api/reset-password avec email valide,Planifié
+EXG-05,Liste des produits,Haute,TC-009,GET /api/products retourne liste complète,Planifié
+EXG-05,Liste des produits,Haute,TC-010,GET /api/products avec base vide,Planifié
+EXG-06,Détails produit,Haute,TC-011,GET /api/products/:id avec ID valide,Planifié
+EXG-06,Détails produit,Haute,TC-012,GET /api/products/:id avec ID inexistant (404),Planifié
+EXG-07,Ajouter au panier,Haute,TC-013,POST /api/cart/add avec token valide,Planifié
+EXG-07,Ajouter au panier,Haute,TC-014,POST /api/cart/add sans token (401),Planifié
+EXG-07,Ajouter au panier,Haute,TC-015,POST /api/cart/add avec productId inexistant,Planifié
+EXG-08,Consulter panier,Haute,TC-016,GET /api/cart avec token valide,Planifié
+EXG-08,Consulter panier,Haute,TC-017,GET /api/cart sans token (401),Planifié
+EXG-09,Modifier quantité panier,Moyenne,TC-018,PUT /api/cart/update avec quantité valide,Planifié
+EXG-09,Modifier quantité panier,Moyenne,TC-019,PUT /api/cart/update avec quantité = 0 (suppression),Planifié
+EXG-10,Supprimer du panier,Moyenne,TC-020,DELETE /api/cart/remove/:productId,Planifié
+EXG-11,Créer commande,Haute,TC-021,POST /api/orders avec panier non vide,Planifié
+EXG-11,Créer commande,Haute,TC-022,POST /api/orders avec panier vide (erreur),Planifié
+EXG-11,Créer commande,Haute,TC-023,POST /api/orders sans token (401),Planifié
+
