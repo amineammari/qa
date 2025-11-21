@@ -1,0 +1,17 @@
+{
+  "name": "easyshop-qa",
+  "version": "1.0.0",
+  "description": "EasyShop E-commerce Prototype - Tests",
+  "type": "module",
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:system": "vitest run tests/system",
+    "test:functional": "vitest run tests/functional",
+    "test:all": "npm run test:system && npm run test:functional"
+  },
+  "devDependencies": {
+    "vitest": "^1.0.4"
+  }
+}
+
